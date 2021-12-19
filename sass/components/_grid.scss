@@ -1,0 +1,132 @@
+.grid {
+
+    &__services {
+        @include grid(25rem, 40rem);
+        justify-content: center;
+    }
+
+    &__work {
+        @include grid(25rem, 1fr);
+        justify-content: center;
+        grid-auto-rows: 30rem;
+        &__item {
+            grid-column: 1/2;
+            @include mq(550px) {
+                &--1 {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+                &--2 {
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                }
+                &--3 {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+    
+                &--4 {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                &--5 {
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
+                &--6 {
+                    grid-column: 2/3;
+                    grid-row: 3/4;
+                }
+                &--7 {
+                    grid-column: 1/2;
+                    grid-row: 4/5;
+                    
+                }
+                &--8 {
+                    grid-column: 2/3;
+                    grid-row: 4/5;
+                    
+                }
+                &--9 {
+                    grid-column: 1/3;
+                    grid-row: 5/6;
+                    
+                }
+
+                @include mq(850px) {
+                    &--1 {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                    }
+                    &--2 {
+                        grid-column: 1/2;
+                        grid-row: 2/4;
+                    }
+                    &--3 {
+                        grid-column: 2/3;
+                        grid-row: 3/4;
+                    }
+        
+                    &--4 {
+                        grid-column: 2/3;
+                        grid-row: 1/3;
+                    }
+                    &--5 {
+                        grid-column: 1/2;
+                        grid-row: 4/5;
+                    }
+                    &--6 {
+                        grid-column: 2/3;
+                        grid-row: 4/5;
+                    }
+                    &--7 {
+                        grid-column: 3/4;
+                        grid-row: 1/2;
+                        
+                    }
+                    &--8 {
+                        grid-column: 3/4;
+                        grid-row: 2/3;
+                        
+                    }
+                    &--9 {
+                        grid-column: 3/4;
+                        grid-row: 3/5;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    &__pricing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__reviews {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        @include mq(700px) {
+            justify-content: auto;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include mq(900px) {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+    &__newsletter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "seo-website-ver",
+  "version": "1.0.0",
+  "description": "SEO landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch --style compressed sass/style.scss:css/style.css"
+  },
+  "author": "flare",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

@@ -1,0 +1,35 @@
+// basic multi column gid with a gap
+@mixin grid($min, $max: 1fr) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, $max));
+    gap:1.5rem;
+}
+
+
+
+@mixin imagegrid($qty, $margin) {
+    width: ((100% - (($qty - 1) * $margin))/$qty);
+    &:nth-child(n) {
+      margin-right: $margin;
+      margin-bottom: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+  
+// handle media queries, if two arguments provided then the first wil be the min value and the second is the max, if only one argument then it will be a min value media query
+@mixin mq($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($args, 1))
+      and (max-width: nth($args, 2)) {
+      @content;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--secondary-bg);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-dark);
+    text-transform: capitalize;
+    margin-right: auto;
+
+    &__icon {
+        font-size: 1.8rem;
+        color: var(--main-color);
+    }
+}
