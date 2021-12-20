@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  href="css/style.css">
 
     <!-- custom js file link  -->
     <script src="js/script.js" defer></script>
@@ -24,7 +24,7 @@
     <div class="container">
         <a href="#" class="logo"> se<i class="fas fa-search-dollar logo__icon"></i> </a>
 
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <ul class="nav__list">
                 <li class="nav__item">
                     <a href="#home" class="nav__link active" data-link="home">home</a>
@@ -47,10 +47,10 @@
             </ul>
         </nav>
 
-        <div id="menu-btn"  class="fas fa-bars nav__btn"></div>
-        <div id="theme-btn" class="far fa-moon nav__theme"></div>
+        <button aria-expanded="true" aria-controls="nav" id="menu-btn"  class="fas fa-bars nav__btn"></button>
+        <button id="theme-btn" class="far fa-moon nav__theme"></button>
 
-        <div class="scroll-indicator"></div>
+        <div class="scroll-indicator" aria-hidden="true"></div>
     </div>
     
 
@@ -69,7 +69,7 @@
             <a href="#" class="btn--default">read more</a>
         </div>
         <div class="hero__img">
-            <img src="images/home-img-1.png" alt="">
+            <img src="images/home-img-1.png" alt="decorative image">
         </div>
     </div>
 
@@ -87,37 +87,37 @@
         <div class="grid__services">
 
             <div class="box">
-                <img class="box__img" src="images/serv-1.png" alt="">
+                <img class="box__img" src="images/serv-1.png" alt="dicorative image">
                 <h3>Result Guarantee</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus!</p>
             </div>
 
             <div class="box">
-                <img class="box__img" src="images/serv-2.png" alt="">
+                <img class="box__img" src="images/serv-2.png" alt="dicorative image">
                 <h3>Reasonable Price</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus!</p>
             </div>
 
             <div class="box">
-                <img class="box__img" src="images/serv-3.png" alt="">
+                <img class="box__img" src="images/serv-3.png" alt="dicorative image">
                 <h3>No Missing Deadlines</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus!</p>
             </div>
 
             <div class="box">
-                <img class="box__img" src="images/serv-4.png" alt="">
+                <img class="box__img" src="images/serv-4.png" alt="dicorative image">
                 <h3>Quick Feedback</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus!</p>
             </div>
 
             <div class="box">
-                <img class="box__img" src="images/serv-5.png" alt="">
+                <img class="box__img" src="images/serv-5.png" alt="dicorative image">
                 <h3>Individual Approach</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus!</p>
             </div>
 
             <div class="box">
-                <img class="box__img" src="images/serv-6.png" alt="">
+                <img class="box__img" src="images/serv-6.png" alt="dicorative image">
                 <h3>Dedicated Team</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus!</p>
             </div>
@@ -137,31 +137,31 @@
 
         <div class="grid__container grid__work">
             <div class="grid__work__item grid__work__item--1">
-                <img class="work__img" src="images/work-1.png" alt="">
+                <img class="work__img" src="images/work-1.png" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--2">
-                <img class="work__img" src="images/work-2.png" alt="">
+                <img class="work__img" src="images/work-2.png" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--3">
-                <img class="work__img" src="images/work-3.png" alt="">
+                <img class="work__img" src="images/work-3.png" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--4">
-                <img class="work__img" src="images/work-4.png" alt="">
+                <img class="work__img" src="images/work-4.png" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--5">
-                <img class="work__img" src="images/work-5.png" alt="">
+                <img class="work__img" src="images/work-5.png" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--6">
-                <img class="work__img" src="images/work-6.png" alt="">
+                <img class="work__img" src="images/work-6.png" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--7">
-                <img class="work__img " src="images/work-7.jpg" alt="">
+                <img class="work__img " src="images/work-7.jpg" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--8">
-                <img class="work__img" src="images/work-8.jpg" alt="">
+                <img class="work__img" src="images/work-8.jpg" alt="dicorative image">
             </div>
             <div class="grid__work__item grid__work__item--9">
-                <img class="work__img" src="images/work-9.jpg" alt="">
+                <img class="work__img" src="images/work-9.jpg" alt="dicorative image">
             </div>
             
         </div>
@@ -183,11 +183,11 @@
                 <h3 class="card__title">basic</h3>
                 <div class="card__price"> $<span>150</span>/Mo </div>
                 <ul class="card__list">
-                    <li> <i class="fas fa-check card__icon"></i> Content quality check </li>
-                    <li> <i class="fas fa-check card__icon"></i> Getting indexed </li>
-                    <li> <i class="fas fa-times card__icon"></i> keywords </li>
-                    <li> <i class="fas fa-times card__icon"></i> SEO analytics </li>
-                    <li> <i class="fas fa-times card__icon"></i> maintainence </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> Content quality check </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> Getting indexed </li>
+                    <li> <i class="fas fa-times card__icon" aria-label="feature not included"></i> keywords </li>
+                    <li> <i class="fas fa-times card__icon" aria-label="feature not included"></i> SEO analytics </li>
+                    <li> <i class="fas fa-times card__icon" aria-label="feature not included"></i> maintainence </li>
                 </ul>
                 <a href="#" class="btn--default">choose plan</a>
             </div>
@@ -195,11 +195,11 @@
                 <h3 class="card__title">standard</h3>
                 <div class="card__price"> $<span>250</span>/Mo</div>
                 <ul class="card__list">
-                    <li> <i class="fas fa-check card__icon"></i> Content quality check </li>
-                    <li> <i class="fas fa-check card__icon"></i> Getting indexed </li>
-                    <li> <i class="fas fa-check card__icon"></i> keywords </li>
-                    <li> <i class="fas fa-times card__icon"></i> SEO analytics </li>
-                    <li> <i class="fas fa-times card__icon"></i> maintainence </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> Content quality check </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> Getting indexed </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> keywords </li>
+                    <li> <i class="fas fa-times card__icon" aria-label="feature not included"></i> SEO analytics </li>
+                    <li> <i class="fas fa-times card__icon" aria-label="feature not included"></i> maintainence </li>
                 </ul>
                 <a href="#" class="btn--special">choose plan</a>
             </div>
@@ -207,11 +207,11 @@
                 <h3 class="card__title">premium</h3>
                 <div class="card__price"> $<span>650</span>/Mo </div>
                 <ul class="card__list">
-                    <li> <i class="fas fa-check card__icon"></i> Content quality check </li>
-                    <li> <i class="fas fa-check card__icon"></i> Getting indexed </li>
-                    <li> <i class="fas fa-check card__icon"></i> keywords/li>
-                    <li> <i class="fas fa-check card__icon"></i> SEO analytics </li>
-                    <li> <i class="fas fa-check card__icon"></i> maintainence </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> Content quality check </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> Getting indexed </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> keywords/li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> SEO analytics </li>
+                    <li> <i class="fas fa-check card__icon" aria-label="feature included"></i> maintainence </li>
                 </ul>
                 <a href="#" class="btn--default">choose plan</a>
             </div>
@@ -236,15 +236,15 @@
 
             <blockquote class="review">
                 <div class="review__user">
-                    <img class="review__user__img" src="images/pic-1.png" alt="">
+                    <img class="review__user__img" src="images/pic-1.png" alt="john doe's image">
                     <div class="review__user__title">
                         <cite class="review__user__name">john doe</cite>
-                        <div class="review__user__stars">
-                            <i class="fas fa-star "></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                        <div class="review__user__stars" aria-label="rating: 4.5 of 5">
+                            <i class="fas fa-star " aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -252,15 +252,15 @@
             </blockquote>
             <blockquote class="review">
                 <div class="review__user">
-                    <img class="review__user__img" src="images/pic-2.png" alt="">
+                    <img class="review__user__img" src="images/pic-2.png" alt="jane doe's image">
                     <div class="review__user__title">
                         <cite class="review__user__name">jane doe</cite>
-                        <div class="review__user__stars">
-                            <i class="fas fa-star "></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                        <div class="review__user__stars" aria-label="rating: 4.5 of 5">
+                            <i class="fas fa-star " aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -268,15 +268,15 @@
             </blockquote>
             <blockquote class="review">
                 <div class="review__user">
-                    <img class="review__user__img" src="images/pic-3.png" alt="">
+                    <img class="review__user__img" src="images/pic-3.png" alt="john doe's image">
                     <div class="review__user__title">
                         <cite class="review__user__name">john doe</cite>
-                        <div class="review__user__stars">
-                            <i class="fas fa-star "></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                        <div class="review__user__stars" aria-label="rating: 4.5 of 5">
+                            <i class="fas fa-star " aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -308,9 +308,9 @@
                 <div class="contact__box">
                     <div class="h3">contact info</div>
                     <address>
-                        <p> <span class="fas fa-map special icon"></span> London, UK - 400104 </p>
-                        <p> <span class="fas fa-envelope special icon"></span> seosolutions@gmail.com </p>
-                        <p> <span class="fas fa-phone special icon"></span> +123-456-7890 </p>
+                        <p> <span class="fas fa-map special icon" aria-hidden="true"></span> London, UK - 400104 </p>
+                        <p> <span class="fas fa-envelope special icon" aria-hidden="true"></span> seosolutions@gmail.com </p>
+                        <p> <span class="fas fa-phone special icon" aria-hidden="true"></span> +123-456-7890 </p>
                     </address>
             
                 </div>
@@ -351,7 +351,7 @@
                         <input name="email" type="email" placeholder="your email">
                         <input name="phone-number" type="number" placeholder="your number">
                         <input name="subject" type="text" placeholder="your subject">
-                        <textarea name="message" placeholder="your message" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" placeholder="your message" cols="30" rows="10"></textarea>
                         <button type="submit" class="btn--special">send</button>
                     </fieldset>
                 </form>
@@ -374,7 +374,7 @@
             </div>
         
             <form action="#" method="post">
-                <input type="email" name="email" placeholder="enter your email" id="" class="email">
+                <input type="email" name="email" placeholder="enter your email" class="email">
                 <button type="submit" class="btn--default">subscribe</button>
             </form>
         </div>
@@ -394,23 +394,23 @@
 
         <ul class="footer__links">
             <li>
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
+                <a href="#" aria-label="facebook account link">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
+                <a href="#" aria-label="twitter account link">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
+                <a href="#" aria-label="instagram account link">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fab fa-github"></i>
+                <a href="#" aria-label="github account link">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>

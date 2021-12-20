@@ -4,8 +4,15 @@ let navbar = document.querySelector('.header .nav');
 
 //toggling the hidden menu and toggling the menu button class when the menu button is clicked
 menuButton.addEventListener("click", () =>{
-    menuButton.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+    if (!navbar.classList.contains("active")) {
+        menuButton.classList.add('fa-times');
+        menuButton.setAttribute("aria-expanded", "true")
+        navbar.classList.add('active');
+    } else {
+        menuButton.classList.remove('fa-times');
+        menuButton.setAttribute("aria-expanded", "false")
+        navbar.classList.remove('active');
+    }
 });
 
 let themeBtn = document.querySelector('.nav__theme');
