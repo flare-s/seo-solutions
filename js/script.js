@@ -1,5 +1,5 @@
 
-(function init {
+(function init () {
     let menuButton = document.querySelector('.nav__btn');
     let navbar = document.querySelector('.header .nav');
 
